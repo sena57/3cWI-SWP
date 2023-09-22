@@ -10,7 +10,7 @@ public class SwitchStatement {
         Random random = new Random();
 
         int randomNumber = random.nextInt(max - min + 1) + min;
-        System.out.println(randomNumber);;
+        System.out.println(randomNumber);
 
         // Wenn der Wert 10 ist gib aus Ten
         // Wenn der Wert 9 ist gib aus Nine
