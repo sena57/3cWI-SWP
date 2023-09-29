@@ -9,13 +9,20 @@ public class WhileLoop {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int randomNumber = random.nextInt(10,31); //gibt mir die zahlen zwischen 10 und 30 aus inklusive den 2 zahlen
+        int result = 0;
 
-        for (int i = 0; i < 100; i++) {
-            System.out.println(randomNumber);
+        while (true) {
+            int randomNumber = random.nextInt(10, 31);//gibt mir die zahlen zwischen 10 und 30 aus inklusive den 2 zahlen
+            System.out.print(randomNumber + " ");
+
+            if (randomNumber == 15 || randomNumber == 25) {
+                break;
+            }
+
+            result += randomNumber;
 
         }
-
+        System.out.print("Die Summe der vorherigen Zahlen (außer 15 oder 25): " + result);
     }
 }
 
