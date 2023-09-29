@@ -13,7 +13,7 @@ public class WhileLoop {
 
         while (true) {
             int randomNumber = random.nextInt(10, 31);//gibt mir die zahlen zwischen 10 und 30 aus inklusive den 2 zahlen
-            System.out.print(randomNumber + " ");
+            System.out.println(randomNumber + " ");
 
             if (randomNumber == 15 || randomNumber == 25) {
                 break;
