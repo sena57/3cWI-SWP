@@ -19,21 +19,23 @@ public class DiceGame {
             if (input == 1) {
                 System.out.println("Deine gewürfelten Zahlen zusammengezählt: " + sumOfPlayer);
                 System.out.println("Die gewürfelten Zahlen des Computers zusammengezählt: " + sumOfComputer);
-            }
 
+                if (sumOfPlayer > sumOfComputer) {
+                    System.out.println("Du gewinnst!");
+                } else if (sumOfPlayer < sumOfComputer) {
+                    System.out.println("Der Computer gewinnt");
+                } else {
+                    System.out.println("Unentschieden");
+                }
 
-            if (sumOfPlayer > sumOfComputer) {
-                System.out.println("Du gewinnst!");
-            } else if (sumOfPlayer < sumOfComputer) {
-                System.out.println("Der Computer gewinnt");
-            } else {
-                System.out.println("Unentschieden");
-            }
+                System.out.println("Wollen Sie weiter spielen? Tippen sie 1 für 'ja' oder 2 für 'nein'");
 
-            System.out.println("Wollen Sie weiter spielen? Tippen Sie 1 für 'ja' und 2 für 'nein'");
-            if (input == 2) {
+            } else if (input == 2) {
                 isGameRunning = false;
             }
+
+
+
         }
     }
 
