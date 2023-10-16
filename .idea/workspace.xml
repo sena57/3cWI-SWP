@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
+      <change afterPath="$PROJECT_DIR$/src/at/sena/excercise/CaeserCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/sena/excercise/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/excercise/DiceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="dc7e8e62-0ba1-4cbd-b8ce-4c0944e7f251" />
+        <option name="accountId" value="1fa42f23-7312-439c-a6db-0d31c69aa5e7" />
         <option name="url" value="https://github.com/sena57/JavaBasics.git" />
       </UrlAndAccount>
     </option>
@@ -41,7 +41,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2VQEwDTsv0c4yDvlCEejbn7WMHw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +60,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DiceGame">
+  <component name="RunManager">
     <configuration name="BankomatAufgabe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.sena.excercise.BankomatAufgabe" />
       <module name="JavaBasics3cWI" />
