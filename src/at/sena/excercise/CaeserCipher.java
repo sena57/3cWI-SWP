@@ -34,7 +34,7 @@ public class CaeserCipher {
     }
 
     public static char decrypt(char c, int offset) {
-        if ((int)c+offset > 122){
+        if ((int)c-offset < 97){
             return (char)((int)c - offset+26);
         }
         else {
