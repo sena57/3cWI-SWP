@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class CaeserCipher {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int word = scanner.nextInt();
+        String word = scanner.next();
 
 
         int offset = 1;
-        System.out.println((String) word);
+        System.out.println(word);
         System.out.println("Encrypted Word: " + encryptedString(word, offset));
         System.out.println("Decrypted word: " + decryptedString(encryptedString(word, offset), offset));
     }
