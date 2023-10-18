@@ -1,12 +1,17 @@
 package at.sena.excercise;
 
+import java.util.Scanner;
+
 public class CaeserCipher {
     public static void main(String[] args) {
-        String word = "Abc";
+        Scanner scanner = new Scanner(System.in);
+        int word = scanner.nextInt();
+
+
         int offset = 1;
-        System.out.println(word);
+        System.out.println((String) word);
         System.out.println("Encrypted Word: " + encryptedString(word, offset));
-        System.out.println("Decrypted word: " + decryptedString(word, offset));
+        System.out.println("Decrypted word: " + decryptedString(encryptedString(word, offset), offset));
     }
 
     public static String encryptedString(String word, int offset){
@@ -34,7 +39,7 @@ public class CaeserCipher {
     }
 
     public static char decrypt(char c, int offset) {
-        if ((int)c-offset < 97){
+        if ((int)c-offset < 65){
             return (char)((int)c - offset+26);
         }
         else {
