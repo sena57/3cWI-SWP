@@ -1,77 +1,102 @@
 package at.sena.excercise;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToeGame {
     public static void main(String[] args) {
-        menu();
-        char[][] gameBoard = {{0, 0, 0},
-                {0, 0, 0},
-                {0, 0, 0}};
+        //menu();
+        char[][] gameBoard = {{' ', ' ', ' '},
+                {' ', ' ', ' '},
+                {' ', ' ', ' '}};
 
+        String[] players = {"player1", "player2"};
+        Random random = new Random();
+        int index = random.nextInt(players.length);
 
-        System.out.print("Wo möchten sie Ihr Zeichen hinplazieren? (1-9): ");
-        Scanner scanner = new Scanner(System.in);
+        String randomPlayer = players[index];
 
-        int position = scanner.nextInt();
+        System.out.println(randomPlayer);
 
-        switch (position) {
-            case 1:
-                gameBoard [0][0] = 'X';
-                break;
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            int position = scanner.nextInt();
 
-            case 2:
-                gameBoard [0][1] = 'X';
-                break;
+            char symbol = ' ';
 
-            case 3:
-                gameBoard [0][2] = 'X';
-                break;
+            if (randomPlayer == "player1") {
+                symbol = 'X';
 
-            case 4:
-                gameBoard [1][0] = 'X';
-                break;
-
-            case 5:
-                gameBoard [1][1] = 'X';
-                break;
-
-            case 6:
-                gameBoard [1][2] = 'X';
-                break;
-
-            case 7:
-                gameBoard [2][0] = 'X';
-                break;
-
-            case 8:
-                gameBoard [2][1] = 'X';
-                break;
-
-            case 9:
-                gameBoard [2][2] = 'X';
-                break;
-        }
-        printGameBoard(gameBoard);
-    }
-
-    public static void menu() {
-        System.out.println("**********************");
-        System.out.println("WELCOME TO TICTACTOE!");
-        System.out.println("**********************");
-        System.out.println("Visualisierung des Spielbrettes: ");
-        System.out.println("|1|2|3|");
-        System.out.println("|4|5|6|");
-        System.out.println("|7|8|9|");
-    }
-
-    public static void printGameBoard(char[][] gameBoard) {
-        for (char[] row : gameBoard) {
-            for (char c : row) {
-                System.out.print(" | " + c + " | ");
+            } else if (randomPlayer == "player2") {
+                symbol = 'O';
             }
-            System.out.println();
+
+            switch (position) {
+                case 1:
+                    gameBoard[0][0] = symbol;
+                    break;
+
+                case 2:
+                    gameBoard[0][1] = symbol;
+                    break;
+
+                case 3:
+                    gameBoard[0][2] = symbol;
+                    break;
+
+                case 4:
+                    gameBoard[1][0] = symbol;
+                    break;
+
+                case 5:
+                    gameBoard[1][1] = symbol;
+                    break;
+
+                case 6:
+                    gameBoard[1][2] = symbol;
+                    break;
+
+                case 7:
+                    gameBoard[2][0] = symbol;
+                    break;
+
+                case 8:
+                    gameBoard[2][1] = symbol;
+                    break;
+
+                case 9:
+                    gameBoard[2][2] = symbol;
+                    break;
+                default:
+                    break;
+
+
+//                printGameBoard(gameBoard);
+            }
         }
 
+//        public static void menu () {
+//            System.out.println("**********************");
+//            System.out.println("WELCOME TO TICTACTOE!");
+//            System.out.println("**********************");
+//            System.out.println("Visualisierung des Spielbrettes: ");
+//            System.out.println("|1|2|3|");
+//            System.out.println("|4|5|6|");
+//            System.out.println("|7|8|9|");
+//        }
+//
+//        public static void printGameBoard ( char[][] gameBoard){
+//            for (char[] row : gameBoard) {
+//                for (char c : row) {
+//                    System.out.print(" | " + c + " | ");
+//                }
+//                System.out.println();
+//            }
+//
+//        }
+
+
     }
+
+
 }

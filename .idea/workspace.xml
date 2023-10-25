@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/excercise/TicTacToeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/excercise/TicTacToeGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CaeserCipher" />
         <item itemvalue="Application.BankomatAufgabe" />
+        <item itemvalue="Application.CaeserCipher" />
         <item itemvalue="Application.DiceGame" />
       </list>
     </recent_temporary>
