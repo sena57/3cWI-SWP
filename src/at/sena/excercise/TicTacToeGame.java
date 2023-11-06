@@ -8,7 +8,7 @@ public class TicTacToeGame {
         menu();
         boolean isGameGoing = true;
 
-        while (isGameGoing) {
+
             char[][] gameBoard = {{' ', ' ', ' '},
                     {' ', ' ', ' '},
                     {' ', ' ', ' '}};
@@ -19,7 +19,7 @@ public class TicTacToeGame {
 
             String randomPlayer = players[index];
 
-            System.out.println(randomPlayer);
+            System.out.println(randomPlayer + " fang an!");
 
             Scanner scanner = new Scanner(System.in);
             int position = scanner.nextInt();
@@ -70,36 +70,39 @@ public class TicTacToeGame {
                     gameBoard[2][2] = symbol;
                     break;
                 default:
-                    isGameGoing = false;
                     break;
 
 
-                printGameBoard(gameBoard);
             }
-        }
-
-        public static void menu() {
-            System.out.println("**********************");
-            System.out.println("WELCOME TO TICTACTOE!");
-            System.out.println("**********************");
-            System.out.println("Visualisierung des Spielbrettes: ");
-            System.out.println("|1|2|3|");
-            System.out.println("|4|5|6|");
-            System.out.println("|7|8|9|");
-        }
-
-        public static void printGameBoard( char[][] gameBoard){
-            for (char[] row : gameBoard) {
-                for (char c : row) {
-                    System.out.print(" | " + c + " | ");
-                }
-                System.out.println();
-            }
-
-        }
+            printGameBoard(gameBoard);
 
 
     }
 
 
+    public static void menu() {
+        System.out.println("**********************");
+        System.out.println("WELCOME TO TICTACTOE!");
+        System.out.println("**********************");
+        System.out.println("Visualisierung des Spielbrettes: ");
+        System.out.println("|1|2|3|");
+        System.out.println("|4|5|6|");
+        System.out.println("|7|8|9|");
+    }
+
+    public static void printGameBoard(char[][] gameBoard) {
+        for (char[] row : gameBoard) {
+            for (char c : row) {
+                System.out.print(" | " + c + " | ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
+
 }
+
+
+

@@ -14,36 +14,35 @@ public class CaeserCipher {
         System.out.println("Decrypted word: " + decryptedString(encryptedString(word, offset), offset));
     }
 
-    public static String encryptedString(String word, int offset){
+    public static String encryptedString(String word, int offset) {
         String ret = "";
-        for(int i = 0; i < word.length(); i++){
+        for (int i = 0; i < word.length(); i++) {
             ret += encrypt(word.charAt(i), offset);
         }
         return ret;
     }
-    public static char encrypt(char c, int offset){
-        if ((int)c+offset > 122){
-            return (char)((int)c + offset-26);
-        }
-        else{
-            return (char)((int)c + offset);
+
+    public static char encrypt(char c, int offset) {
+        if ((int) c + offset > 122) {
+            return (char) ((int) c + offset - 26);
+        } else {
+            return (char) ((int) c + offset);
         }
     }
 
     public static String decryptedString(String word, int offset) {
         String ret = "";
-        for(int i = 0; i < word.length(); i++){
+        for (int i = 0; i < word.length(); i++) {
             ret += decrypt(word.charAt(i), offset);
         }
         return ret;
     }
 
     public static char decrypt(char c, int offset) {
-        if ((int)c-offset < 65){
-            return (char)((int)c - offset+26);
-        }
-        else {
-            return (char)((int)c - offset);
+        if ((int) c - offset < 65) {
+            return (char) ((int) c - offset + 26);
+        } else {
+            return (char) ((int) c - offset);
         }
     }
 }
