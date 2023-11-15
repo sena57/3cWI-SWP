@@ -113,10 +113,10 @@ public class TicTacToeGame {
 
         for (int i = 0; i < winningCombinations.length; i++) {
             int combination = winningCombinations[i][i][i];
-            int [a, b, c] = combination;
+            //int {a, b, c} = combination;
         }
 
-
+        return false;
     }
     public static void play () {
 

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
+      <change afterPath="$PROJECT_DIR$/src/at/sena/excercise/WordGuessing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/sena/excercise/TicTacToeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/excercise/TicTacToeGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BankomatAufgabe">
+  <component name="RunManager">
     <configuration name="BankomatAufgabe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.sena.excercise.BankomatAufgabe" />
       <module name="JavaBasics3cWI" />
