@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
+      <change afterPath="$PROJECT_DIR$/src/at/sena/oo/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/sena/oo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/excercise/WordGuessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/excercise/WordGuessing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,16 +152,5 @@
     <MESSAGE value="added files" />
     <MESSAGE value="test ran" />
     <option name="LAST_COMMIT_MESSAGE" value="test ran" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

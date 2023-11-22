@@ -17,28 +17,27 @@ public class WordGuessing {
             i++;
         }
         System.out.println(chars);
-        guessingLetters(chars);
+        //guessingLetters(chars);
     }
 
-    public static void guessingLetters(char[] finalWord) {
-        Scanner guess = new Scanner(System.in);
+//    public static void guessingLetters(char[] finalWord) {
+//        Scanner guess = new Scanner(System.in);
+//
+//        boolean finished = false;
+//        while (finished == false) {
+//            System.out.println("Gib einen Buchstaben ein: ");
+//            String letter = guess.next();
+//
+//            while (letter.length()) {
+//
+//            }
+//
+//            booelean found = false;
+//            for (int i = 0; i < finalWord.length; i++) {
+//                if(letter.charAt(0) == finalWord[i]) {
+//                    found = true;
+//                }
+//            }
+//        }
 
-        boolean finished = false;
-        while (finished == false) {
-            System.out.println("Gib einen Buchstaben ein: ");
-            String letter = guess.next();
-
-            while (letter.length()) {
-
-            }
-
-            booelean found = false;
-            for (int i = 0; i < finalWord.length; i++) {
-                if(letter.charAt(0) == finalWord[i]) {
-                    found = true;
-                }
-            }
-        }
-
-    }
 }
