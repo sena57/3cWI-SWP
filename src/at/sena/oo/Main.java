@@ -8,11 +8,15 @@ public class Main {
         myCar.color = "blue";
         myCar.serialNumber = "S57";
         myCar.fuelAmount = 80;
+        myCar.fuelAmountMax = 100;
+        myCar.amountOfRepetitions = 5;
 
         System.out.println(myCar.fuelAmount);
         myCar.drive();
         System.out.println(myCar.fuelAmount);
 
         myCar.breaks();
+        myCar.turboBoost(myCar.fuelAmount, myCar.fuelAmountMax);
+        myCar.honk(myCar.amountOfRepetitions);
     }
 }
