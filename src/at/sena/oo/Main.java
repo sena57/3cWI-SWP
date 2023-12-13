@@ -2,21 +2,23 @@ package at.sena.oo;
 
 public class Main {
     public static void main(String[]args) {
-        Car myCar = new Car();
-        myCar.brand = "BMW";
-        myCar.fuelConsumption = 5;
-        myCar.color = "blue";
-        myCar.serialNumber = "S57";
-        myCar.fuelAmount = 80;
-        myCar.fuelAmountMax = 100;
-        myCar.amountOfRepetitions = 5;
+        Car myCar = new Car(5, "BMW", "S57");
+        myCar.setColor("blue");
+        myCar.setFuelAmount(80);
+        myCar.setFuelAmountMax(100);
+        myCar.setAmountOfRepetitions(5);
 
-        System.out.println(myCar.fuelAmount);
+        Car c2 = new Car(10,"Mercedes", "Oezcan123");
+
+
+        System.out.println(myCar.getFuelAmount());
         myCar.drive();
-        System.out.println(myCar.fuelAmount);
+        System.out.println(myCar.getFuelAmount());
 
         myCar.breaks();
-        myCar.turboBoost(myCar.fuelAmount, myCar.fuelAmountMax);
-        myCar.honk(myCar.amountOfRepetitions);
+        myCar.turboBoost(myCar.getFuelAmount(), myCar.getFuelAmountMax());
+        myCar.honk(myCar.getAmountOfRepetitions());
+        myCar.getRemainingRange();
+
     }
 }
