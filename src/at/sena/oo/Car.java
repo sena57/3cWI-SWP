@@ -2,6 +2,7 @@ package at.sena.oo;
 
 public class Car {
     //Instanzen / Gedächtnisvariablen
+    private Engine engine;
     private String color;
     private int fuelAmount;
     private int fuelConsumption;
@@ -10,15 +11,17 @@ public class Car {
     private int fuelAmountMax;
     private int amountOfRepetitions;
 
-    public Car(int fuelConsumption, String brand, String serialNumber){
+    public Car(Engine engine,int fuelConsumption, String brand, String serialNumber){
+        this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
     }
 
-    public void drive() {
-        this.fuelAmount = this.fuelAmount - fuelConsumption;
+    public void drive(int amount) {
         System.out.println("I'm driving!");
+        this.engine.drive(amount);
+
     }
 
     public void breaks(){
@@ -81,6 +84,10 @@ public class Car {
         this.serialNumber = serialNumber;
     }
 
+    public void setEngine(Engine engine){
+        this.engine = engine;
+    }
+
 
     //getter
     public int getAmountOfRepetitions() {
@@ -110,4 +117,5 @@ public class Car {
     public String getSerialNumber() {
         return serialNumber;
     }
+    public Engine getEngine() { return engine; }
 }
