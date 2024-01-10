@@ -10,7 +10,5 @@ public class Main {
         myCar.setAmountOfRepetitions(5);
 
         myCar.drive(80);
-
-
     }
 }
