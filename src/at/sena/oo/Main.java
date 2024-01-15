@@ -9,6 +9,6 @@ public class Main {
         myCar.setFuelAmountMax(100);
         myCar.setAmountOfRepetitions(5);
 
-        myCar.drive(80);
+        myCar.drive(80, 50);
     }
 }

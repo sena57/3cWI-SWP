@@ -18,9 +18,9 @@ public class Car {
         this.serialNumber = serialNumber;
     }
 
-    public void drive(int amount) {
+    public void drive(int amount, int speed) {
         System.out.println("I'm driving!");
-        this.engine.drive(amount);
+        this.engine.drive(amount, speed);
     }
 
     public void breaks(){

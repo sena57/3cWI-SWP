@@ -11,8 +11,8 @@ public class Engine {
     }
 
     //amount should be between 0 and 100
-    public void drive(int amount){
-        System.out.println("the motor is running with " + amount);
+    public void drive(int amount, int speed){
+        System.out.println("the motor is running with " + amount + " and with: " + speed + "km/h");
     }
     public int getHorsePower(){
             return horsePower;
