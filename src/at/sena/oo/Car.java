@@ -1,21 +1,34 @@
 package at.sena.oo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     //Instanzen / Gedächtnisvariablen
     private Engine engine;
+    private Tank tank;
+    private List<RearMirror> mirrors;
     private String color;
-    private int fuelAmount;
     private int fuelConsumption;
     private String serialNumber;
     private String brand;
-    private int fuelAmountMax;
     private int amountOfRepetitions;
 
-    public Car(Engine engine,int fuelConsumption, String brand, String serialNumber){
+    public Car(Engine engine, Tank tank,int fuelConsumption, String brand, String serialNumber){
         this.engine = engine;
+        this.tank = tank;
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
+        this.mirrors = new ArrayList<>();
+    }
+
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
     }
 
     public void drive(int amount, int speed) {
@@ -43,7 +56,7 @@ public class Car {
 
     public void getRemainingRange() {
         if (fuelConsumption != 0) {
-            double remainingRange = (double) fuelAmount / fuelConsumption;
+            double remainingRange = (double) this.tank.getFuelAmount() / fuelConsumption;
             System.out.println("Remaining Range:" + remainingRange);
         } else {
             System.out.println("Error");
@@ -63,17 +76,9 @@ public class Car {
         this.color = color;
     }
 
-    public void setFuelAmount(int fuelAmount) {
-        if(fuelAmount>100) {
-            this.fuelAmount = 100;
-        } else {
-            this.fuelAmount = fuelAmount;
-        }
-    }
 
-    public void setFuelAmountMax(int fuelAmountMax) {
-        this.fuelAmountMax = fuelAmountMax;
-    }
+    //setter
+
 
     public void setFuelConsumption(int fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
@@ -93,14 +98,6 @@ public class Car {
         return amountOfRepetitions;
     }
 
-    public int getFuelAmount() {
-        return fuelAmount;
-    }
-
-    public int getFuelAmountMax() {
-        return fuelAmountMax;
-    }
-
     public int getFuelConsumption() {
         return fuelConsumption;
     }
@@ -117,4 +114,6 @@ public class Car {
         return serialNumber;
     }
     public Engine getEngine() { return engine; }
+
+
 }
