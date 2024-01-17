@@ -10,5 +10,9 @@ public class Main {
         remote.addBattery(battery2);
 
         System.out.println(remote.getBatteries().get(0).getChargingStatus());
+
+        remote.getStatus();
+        remote.turnOn();
+        remote.turnOff();
     }
 }
