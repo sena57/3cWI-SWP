@@ -1,10 +1,10 @@
-package at.sena.oo;
+package at.sena.ooCar;
 
-public class RearMirror {
+public class Tire {
     private int size;
-    private int position; //0 = neutral -10 nach links, 10 nach rechts
+    private int position; //0 ist vorne links, 1 vorne rechts, 2 hinten links, 3 hinten rechts
 
-    public RearMirror(int size, int position) {
+    public Tire(int size, int position){
         this.size = size;
         this.position = position;
     }

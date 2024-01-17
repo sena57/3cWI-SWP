@@ -1,4 +1,4 @@
-package at.sena.oo;
+package at.sena.ooCar;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS};
