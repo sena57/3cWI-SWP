@@ -23,10 +23,9 @@ public class Remote {
         System.out.println(result);
     }
 
-    public void turnOn(int chargingStatus){
-        for (int i = 0; i < batteries.size(); i++) {
-            System.out.println("Verbraucher angeschlossen");
-            this.batteries.turnOn(chargingStatus);
+    public void turnOn(){
+        for (Battery battery : this.batteries) {
+            battery.turnOn();
         }
     }
 
