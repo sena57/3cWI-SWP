@@ -12,7 +12,7 @@ public class Main {
         System.out.println(remote.getBatteries().get(0).getChargingStatus());
 
         remote.getStatus();
-        remote.turnOn();
+        remote.turnOn(battery1.getChargingStatus());
         remote.turnOff();
     }
 }

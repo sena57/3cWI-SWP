@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/sena/ooRemote/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/ooRemote/Battery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/ooRemote/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/ooRemote/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/ooRemote/Remote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/ooRemote/Remote.java" afterDir="false" />
     </list>

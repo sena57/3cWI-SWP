@@ -13,4 +13,10 @@ public class Battery {
     public void setChargingStatus(int chargingStatus) {
         this.chargingStatus = chargingStatus;
     }
+
+    public void turnOn(int chargingStatus){
+        System.out.println("Es funktioniert");
+        int result = chargingStatus - 5;
+        System.out.println(result);
+    }
 }
