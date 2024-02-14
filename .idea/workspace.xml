@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abda6fb-93dc-4a79-bf3e-37b00d001ac2" name="Changes" comment="test ran">
+      <change afterPath="$PROJECT_DIR$/src/at/sena/examples/cars/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/examples/cars/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/examples/cars/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/sena/examples/cars/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/sena/examples/cars/Engine.java" afterDir="false" />
@@ -65,7 +66,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BankomatAufgabe">
+  <component name="RunManager" selected="Application.main">
     <configuration name="BankomatAufgabe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.sena.excercise.BankomatAufgabe" />
       <module name="JavaBasics3cWI" />
@@ -118,8 +119,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.sena.examples.cars.main" />
+      <module name="JavaBasics3cWI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.sena.examples.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.BankomatAufgabe" />
         <item itemvalue="Application.CaeserCipher" />
