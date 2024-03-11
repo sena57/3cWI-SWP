@@ -74,3 +74,6 @@ public class Car {
         System.out.println(sum);
     }
 }
+
+
+//Has a beziehung zwischen car und producer fehlt noch (dann wäre es fertig)
